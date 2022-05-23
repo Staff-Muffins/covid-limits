@@ -1,8 +1,53 @@
-li {
+header {
   font-family: "Gelion Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #fb4c47;
+  color: #035755;
+}
+header object {
+  position: fixed;
+  top: 33px;
+  left: 239px;
+  float: left;
+  height: 63px;
+  width: 63px;
+}
+header h2 {
+  position: absolute;
+  left: 316px;
+  top: 37px;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+header ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+
+}
+header li {
+  float: right;
+}
+header li a {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #035755;
+}
+header li a:hover{
+  color: #FF383D;
+  transition: 0.2s;
+}
+header li:first-child{
+  border: 2px solid #FF383D;
+  border-radius: 46px;
+  display: inline-block;
+  margin: 10px;
+  width: 154px;
+  text-align: center;
+  color: #FF383D;
+  margin: 0 auto;
 }
