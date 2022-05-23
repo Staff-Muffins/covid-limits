@@ -1,117 +1,53 @@
-body {
-  margin: 0;
-}
-.header-info {
-  width: 80%;
-  margin: auto;
-}
-.logo {
-  float: left;
-}
-.logo-text {
-  float: left;
-}
-nav {
-  float: right;
-}
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.contact {
-  list-style: none;
-  text-decoration: none;
-  color: #035755;
-  float: right;
-  display: inline-block;
-  margin-left: 43px;
-  padding: 52px;
-  position: relative;
-}
-nav li {
-  display: inline-block;
-  margin-left: 43px;
-  padding: 52px;
-  position: relative;
-}
-nav ul li a {
-  color: #035755;
-  text-decoration: none;
-}
-nav ul li a:hover {
-  color: #FB4C47;
-  transition: 0.2s;
-}
-nav ul li a::before {
-  content: '';
-  display: block;
-  
-  border-radius: 46px;
-  background-color: #FB4C47;
-  position: absolute;
-  top: 81px;
-  left: 50%;
-  transition: all ease-in-out 0.3s;
-}
-nav ul li a:hover::before {
-  color: #FB4C47;
-  width: 6px;
-  height: 6px;
-}  
-
-
-/* 
-header {
+li,
+a,
+button,
+h2 {
   font-family: "Gelion Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: #035755;
+  text-decoration: none;
 }
-header object {
-  position: fixed;
-  top: 33px;
-  left: 239px;
-  float: left;
-  height: 63px;
-  width: 63px;
+header {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 30px 10%;
 }
-header h2 {
-  position: absolute;
-  left: 316px;
-  top: 37px;
-  font-size: 19px;
-  text-transform: uppercase;
+.logo-info {
+  margin-right: auto;
 }
-header ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-
+.logo-info h2 {
+  position: relative;
+  top: -25px;
+  margin-left: 20px;
+  display: inline-block;
 }
-header li {
-  float: right;
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
 }
-header li a {
-  display: block;
-  padding: 15px;
-  text-align: center;
+.nav-links li a {
   text-decoration: none;
   color: #035755;
+  transition: all 0.3s ease 0s;
 }
-header li a:hover{
-  color: #FF383D;
-  transition: 0.2s;
+.nav-links li a:hover {
+  color: #fb4c47;
 }
-header li:first-child{
-  border: 2px solid #FF383D;
+.contact button {
+  margin-left: 20px;
+  padding: 12px 48px;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 2px #fb4c47;
   border-radius: 46px;
-  display: inline-block;
-  margin: 10px;
-  width: 154px;
-  text-align: center;
-  color: #FF383D;
-  margin: 0 auto;
-} */
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fb4c47;
+}
+.contact button:hover {
+  background-color: rgba(251, 76, 71, 0.05);
+}
