@@ -1,3 +1,4 @@
+
 li,
 a,
 button,
@@ -49,5 +50,21 @@ header {
   color: #fb4c47;
 }
 .contact button:hover {
-  background-color: rgba(251, 76, 71, 0.05);
+  background-color: rgba(251, 76, 71, 0.1);
+}
+.contact-help button {
+  color: white;
+  font-size: 24px;
+  margin-top: 54px;
+  padding: 18px 48px;
+  background-color: #fb4c47;
+  border-radius: 64px;
+  border: #fb4c47;
+}
+.contact-help button:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.header-info {
+  display: flex;
 }
