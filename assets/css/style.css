@@ -54,9 +54,8 @@ header {
 .nav-links li a:hover::before {
   opacity: 1;
   top: 45px;
-  transition: all ease 0.5s;
+  transition: all 0.5s ease 0s;
 }
-
 .contact button {
   margin-left: 20px;
   padding: 12px 48px;
@@ -71,7 +70,6 @@ header {
 .contact button:hover {
   background-color: rgba(251, 76, 71, 0.1);
 }
-
 
 /* stop area */
 .header-info {
@@ -89,12 +87,16 @@ header {
 }
 .header-info .header-text h3 {
   font-size: 32px;
+  color: #fb4c47;
+  font-weight: 700;
 }
 .header-info .header-text h1 {
   font-size: 54px;
+  color: #035755;
 }
 .header-info .header-text p {
   font-size: 24px;
+  color: #4b4f51;
 }
 .contact-help button {
   color: white;
