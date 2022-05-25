@@ -40,7 +40,7 @@ header {
   color: #fb4c47;
 }
 .nav-links li a::before {
-  content: '';
+  content: "";
   display: block;
   height: 6px;
   width: 6px;
@@ -71,6 +71,31 @@ header {
 .contact button:hover {
   background-color: rgba(251, 76, 71, 0.1);
 }
+
+
+/* stop area */
+.header-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-info .header-text {
+  display: flex;
+  flex-direction: column;
+}
+.contact-help button:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.header-info .header-text h3 {
+  font-size: 32px;
+}
+.header-info .header-text h1 {
+  font-size: 54px;
+}
+.header-info .header-text p {
+  font-size: 24px;
+}
 .contact-help button {
   color: white;
   font-size: 24px;
@@ -81,22 +106,7 @@ header {
   border-radius: 64px;
   border: #fb4c47;
 }
-.contact-help button:hover {
-  opacity: 0.8;
-  transition: 0.3s;
-/* }
-.header-info .header-text h3 {
-  font-size: 32px;
+.header-info img {
+  height: 812px;
+  width: auto;
 }
-.header-info .header-text h1 {
-  font-size: 54px;
-}
-.header-info .header-text p {
-  font-size: 24px;
-}
-
-.header-info {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} */
