@@ -74,25 +74,26 @@ header {
 /* stop area */
 .header-info {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  font-family: "Gelion Regular";
+  font-style: normal;
 }
 .header-info .header-text {
   display: flex;
+  margin-left: 10%;
+  -ms-wrap-through: nowrap;
   flex-direction: column;
-}
-.contact-help button:hover {
-  opacity: 0.8;
-  transition: 0.3s;
-}
-.header-info .header-text h3 {
-  font-size: 32px;
-  color: #fb4c47;
-  font-weight: 700;
+  z-index: 1;
+  align-self: center;
 }
 .header-info .header-text h1 {
   font-size: 54px;
   color: #035755;
+}
+.header-info .header-text h1::first-line {
+  font-size: 32px;
+  color: #fb4c47;
+  font-weight: 700;
 }
 .header-info .header-text p {
   font-size: 24px;
@@ -102,13 +103,18 @@ header {
   color: white;
   font-size: 24px;
   font-weight: 700;
+  width: 250px;
+  height: 80px;
   margin-top: 54px;
-  padding: 20px 52px;
+  /* padding: 24px 58px; */
   background-color: #fb4c47;
   border-radius: 64px;
   border: #fb4c47;
 }
-.header-info img {
-  height: 812px;
-  width: auto;
+.contact-help button:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.header-info .header-picture {
+  border-style: none;
 }
