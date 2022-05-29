@@ -1,8 +1,120 @@
-li {
+li,
+a,
+button,
+h2 {
   font-family: "Gelion Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  color: #035755;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  padding: 30px 10%;
+}
+.logo-info {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.logo-info h2 {
+  font-weight: 700;
+  font-size: 19px;
+  margin-left: 20px;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #035755;
+  transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
   color: #fb4c47;
+}
+.nav-links li a::before {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 6px;
+  border-radius: 36px;
+  background-color: #fb4c47;
+  position: relative;
+  opacity: 0;
+  top: 20px;
+  left: 50%;
+}
+.nav-links li a:hover::before {
+  opacity: 1;
+  top: 45px;
+  transition: all 0.5s ease 0s;
+}
+.contact button {
+  margin-left: 20px;
+  padding: 12px 48px;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 2px #fb4c47;
+  border-radius: 46px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fb4c47;
+}
+.contact button:hover {
+  background-color: rgba(251, 76, 71, 0.1);
+}
+
+/* stop area */
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gelion Regular";
+  font-style: normal;
+}
+.header-info .header-text {
+  display: flex;
+  margin-left: 10%;
+  -ms-wrap-through: nowrap;
+  flex-direction: column;
+  z-index: 1;
+  align-self: center;
+}
+.header-info .header-text h1 {
+  font-size: 54px;
+  color: #035755;
+}
+.header-info .header-text h1::first-line {
+  font-size: 32px;
+  color: #fb4c47;
+  font-weight: 700;
+}
+.header-info .header-text p {
+  font-size: 24px;
+  color: #4b4f51;
+}
+.contact-help button {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  width: 250px;
+  height: 80px;
+  margin-top: 54px;
+  /* padding: 24px 58px; */
+  background-color: #fb4c47;
+  border-radius: 64px;
+  border: #fb4c47;
+}
+.contact-help button:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.header-info .header-picture {
+  border-style: none;
 }
