@@ -1,7 +1,9 @@
 li,
 a,
 button,
-h2 {
+h2,
+h1,
+p {
   font-family: "Gelion Regular";
   font-style: normal;
   font-weight: 400;
@@ -72,6 +74,7 @@ header {
 }
 
 /* stop area */
+
 .header-info {
   display: flex;
   justify-content: space-between;
@@ -87,7 +90,9 @@ header {
   align-self: center;
 }
 .header-info .header-text h1 {
+  line-height: 1.1em;
   font-size: 54px;
+  font-weight: bold;
   color: #035755;
 }
 .header-info .header-text h1::first-line {
@@ -106,7 +111,7 @@ header {
   width: 250px;
   height: 80px;
   margin-top: 54px;
-  /* padding: 24px 58px; */
+  padding: 24px 58px;
   background-color: #fb4c47;
   border-radius: 64px;
   border: #fb4c47;
@@ -115,6 +120,85 @@ header {
   opacity: 0.8;
   transition: 0.3s;
 }
-.header-info .header-picture {
-  border-style: none;
+/* .header-info .header-picture {
+} */
+
+/* contagion-section */
+
+.contagion-section {
+  width: 100%;
+  padding: 100px 0px;
+}
+
+.head-of-contagion {
+  text-align: center;
+}
+.head-of-contagion h2 {
+  color: #fa5652;
+  font-size: 29px;
+  font-weight: bold;
+}
+.head-of-contagion h1 {
+  color: #035755;
+  font-size: 50px;
+  font-weight: bold;
+}
+.head-of-contagion p {
+  font-size: 19px;
+  color: #4b4f51;
+  
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.box {
+  position: relative;
+  height: 575px;
+  width: 461px;
+  background-color: #ffffff;
+  margin: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #fa5652;
+  border-radius: 5px;
+  position: absolute;
+  top: 99.2%;
+  width: 0%;
+  transition: all ease-in-out 0.5s;
+}
+.box:hover::before {
+  width: 100%;
+}
+.box:hover {
+  bottom: 15px;
+}
+
+/* inside box info */
+.box img {
+  width: 270px;
+  height: auto;
+  margin-top: 70px;
+}
+.box h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #035755;
+}
+.box p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4b4f51;
+  line-height: 2em;
+  padding: 20px;
 }
